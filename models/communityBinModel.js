@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-const binSchema = mongoose.Schema({
+const binSchema = new mongoose.Schema({
 
 });
