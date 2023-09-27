@@ -39,6 +39,14 @@ const productSchema = new mongoose.Schema(
         message: 'productTag is : bio-degradable, recylced etc.'
       }
     },
+    catagory: {
+      type: String,
+      required: [true, 'A product must have a Product Catagory'],
+      enum: {
+        values: ['zeroWaste', 'art', 'womanCare'],
+        message: 'productTag is : art, womanCare etc'
+      }
+    },
     ratingsAverage: {
       type: Number,
       default: 4.5,
